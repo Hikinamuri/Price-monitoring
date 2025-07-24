@@ -27,7 +27,7 @@ const CategoryDetailPage = () => {
   };
 
   const breadcrumbs = [
-    { name: "Рейтинг ретейлеров", href: "/" },
+    { name: "Рейтинг ритейлеров", href: "/" },
     { name: retailerDisplayName, href: `/retailer/${retailerName}` },
     { name: categoryDisplayName, href: null }
   ];
@@ -78,7 +78,7 @@ const CategoryDetailPage = () => {
               {retailerDisplayName}
             </h1>
             <p className="text-gray-600 dark:text-gray-400">
-              Рейтинг ретейлеров › {retailerDisplayName} › {categoryDisplayName}
+              Рейтинг ритейлеров › {retailerDisplayName} › {categoryDisplayName}
             </p>
           </div>
         </div>

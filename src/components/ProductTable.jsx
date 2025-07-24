@@ -107,7 +107,7 @@ const ProductTable = ({ products, onRowClick }) => {
                 Медиана рынка
               </th>
               <th className="px-6 py-4 text-center text-xs font-medium text-gray-500 dark:text-gray-400 uppercase tracking-wider">
-                Отклонение цены ретейлеров от медианы рынка и диапазон цен конкурентов
+                Отклонение цены ритейлеров от медианы рынка и диапазон цен конкурентов
               </th>
             </tr>
           </thead>

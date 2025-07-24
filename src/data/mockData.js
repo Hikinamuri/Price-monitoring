@@ -201,11 +201,11 @@ export const categories = [
 
 export const breadcrumbs = {
   retailer: [
-    { name: "Рейтинг ретейлеров", href: "/" },
+    { name: "Рейтинг ритейлеров", href: "/" },
     { name: "Чижик", href: null }
   ],
   category: [
-    { name: "Рейтинг ретейлеров", href: "/" },
+    { name: "Рейтинг ритейлеров", href: "/" },
     { name: "Чижик", href: "/retailer/чижик" },
     { name: "Уход за телом и лицом", href: null }
   ]
