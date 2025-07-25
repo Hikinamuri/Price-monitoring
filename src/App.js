@@ -15,6 +15,7 @@ function App() {
             <Route path="/" element={<HomePage />} />
             <Route path="/retailer/:retailerName" element={<RetailerDetailPage />} />
             <Route path="/retailer/:retailerName/category/:categorySlug" element={<CategoryDetailPage />} />
+            <Route path="category/:categorySlug" element={<CategoryDetailPage />} />
           </Routes>
         </BrowserRouter>
       </div>

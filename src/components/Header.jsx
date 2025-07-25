@@ -1,18 +1,21 @@
 import React from 'react';
-import { Moon, Sun, User } from 'lucide-react';
 import { useTheme } from '../contexts/ThemeContext';
 
 import LogoImg from '../assets/logoImg.svg';
 import LogoImgWhite from '../assets/logoImgWhite.svg';
 import Logo from '../assets/logo.svg';
 import LogoWhite from '../assets/logoWhite.svg';
+import Moon from '../assets/moon.svg';
+import Sun from '../assets/sun.svg';
+import ProfileNight from '../assets/profile-night.svg';
+import ProfileDay from '../assets/profile-light.svg';
 
 const Header = () => {
   const { isDark, toggleTheme } = useTheme();
 
   return (
-    <header className="bg-white dark:bg-slate-800 border-b border-gray-200 dark:border-slate-700 transition-colors duration-200">
-      <div className="min-w-9xl mx-auto px-4 sm:px-6 lg:px-8">
+    <header className="bg-[#F8F8F8] dark:bg-[#012F3A] transition-colors duration-200">
+      <div className="min-w-9xl mx-auto px-4 py-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
           <div className="flex items-center space-x-2">
@@ -33,25 +36,27 @@ const Header = () => {
               <span className="text-xs text-gray-500 dark:text-gray-400">Мониторинг цен</span>
             </div>
           </div>
-
-          {/* Search and Controls */}
           <div className="flex items-center space-x-4">
             {/* Theme Toggle */}
             <button
               onClick={toggleTheme}
-              className="p-2 rounded-lg bg-gray-100 dark:bg-slate-700 hover:bg-gray-200 dark:hover:bg-slate-600 transition-all duration-200 hover:scale-105"
+              className="transition-all duration-200 hover:scale-105"
               aria-label="Toggle theme"
             >
               {isDark ? (
-                <Sun className="h-5 w-5 text-yellow-500" />
+                <img src={ Sun } alt="" srcSet="" />
               ) : (
-                <Moon className="h-5 w-5 text-gray-600" />
+                <img src={ Moon } alt="" srcSet="" />
               )}
             </button>
 
             {/* User Icon */}
-            <button className="p-2 rounded-lg bg-gray-100 dark:bg-slate-700 hover:bg-gray-200 dark:hover:bg-slate-600 transition-all duration-200 hover:scale-105">
-              <User className="h-5 w-5 text-gray-600 dark:text-gray-300" />
+            <button className="transition-all duration-200 hover:scale-105">
+              {isDark ? (
+                <img src={ ProfileNight } alt="" srcSet="" />
+              ) : (
+                <img src={ ProfileDay} alt="" srcSet="" />
+              )}
             </button>
           </div>
         </div>

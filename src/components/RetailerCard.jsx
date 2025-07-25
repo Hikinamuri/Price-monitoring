@@ -42,7 +42,7 @@ const RetailerCard = ({ retailer, onClick }) => {
     return (
         <div 
             onClick={() => onClick && onClick(retailer)}
-            className="bg-white dark:bg-slate-800 rounded-[6px] p-[12px] px-[10px] shadow-sm hover:shadow-lg border border-[#D9D9D9] dark:border-slate-700 cursor-pointer transition-all duration-300 hover:scale-[1.02] group min-w-[250px] min-h-[140px]"
+            className="bg-white dark:bg-[#014252] rounded-[6px] p-[12px] px-[10px] shadow-sm hover:shadow-lg border border-[#D9D9D9] dark:border-white cursor-pointer transition-all duration-300 hover:scale-[1.02] group min-w-[220px] max-w-[220px] min-h-[127px]"
         >
             {/* Header */}
             <div className="flex items-center justify-between mb-4">
@@ -73,20 +73,20 @@ const RetailerCard = ({ retailer, onClick }) => {
             {/* Stats */}
             <div className="space-y-3">
                 <div className="flex items-center justify-between">
-                    <span className="text-xs text-dark-500 dark:text-gray-400">
+                    <span className="text-xs text-dark-500 dark:text-white">
                         Среднее отклонение:
                     </span>
-                    <span className={`font-semibold text-xs text-dark-600 dark:text-gray-400`}>
+                    <span className={`font-semibold text-xs text-dark-600 dark:text-white`}>
                         {retailer.deviation}%
                     </span>
                 </div>
                 
                 <div className="flex items-center justify-between">
-                    <span className="text-xs text-dark-400 dark:text-gray-400">
+                    <span className="text-xs text-dark-400 dark:text-white">
                         Динамика за 7 дней:
                     </span>
                     <div className="flex items-center">
-                        <span className="text-xs font-medium text-dark-400 dark:text-gray-300">
+                        <span className="text-xs font-medium text-dark-400 dark:text-white">
                             {retailer.dynamic}
                         </span>
                         {getDynamicTriangle(retailer.dynamic)}
@@ -95,7 +95,7 @@ const RetailerCard = ({ retailer, onClick }) => {
                 
                 <div>
                     <div className="flex items-center justify-between">
-                        <span className="text-sm text-dark-500 dark:text-gray-500">
+                        <span className="text-sm text-dark-500 dark:text-white">
                             SKU: {retailer.totalSku}
                         </span>
                     </div>

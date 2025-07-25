@@ -53,68 +53,60 @@ export const statistics = {
 // Categories within a retailer
 export const retailerCategories = [
   {
-    id: 1,
-    name: "Хлеб и выпечка",
+    id: '9ea28897-29a6-3746-cac9-af2e8c0b1593',
+    name: "Прочее для окраски волос",
     discount: "-6.0%",
     weekDynamic: "0.0",
     totalSku: 0,
     medianData: [0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
   },
   {
-    id: 2,
-    name: "Уход за телом и лицом",
+    id: '1e854879-36ff-7f40-7926-5cca64ddf343',
+    name: "Ополаскиватель для полости рта",
     discount: "-22.8%",
     weekDynamic: "+1.0",
     totalSku: 1,
     medianData: [0, 5, 2, 2, 4, 2, 9, 2, 2, 0, 0, 0, 0, 0]
   },
   {
-    id: 3,
-    name: "Уход за полостью рта",
+    id: '49b54d00-aefc-2a5a-f59d-4352a8ab1d1d',
+    name: "Полотенца",
     discount: "-13.8%",
     weekDynamic: "+2.6",
     totalSku: 26,
     medianData: [1, 1, 2, 4, 5, 11, 2, 1, 1, 0, 0, 0, 0, 0]
   },
   {
-    id: 4,
-    name: "Уход за волосами",
+    id: '368c0f8f-06d8-80a5-3eae-3cba5f68b624',
+    name: "Салфетки",
     discount: "-17.1%",
     weekDynamic: "0.0",
     totalSku: 26,
     medianData: [2, 0, 0, 0, 0, 1, 2, 1, 0, 0, 0, 0, 0, 0]
   },
   {
-    id: 5,
-    name: "Товары для уборки и хранения",
+    id: 'ce8f964b-a690-20db-d847-e89cf9ebea36',
+    name: "Салфетки влажные",
     discount: "-15.5%",
     weekDynamic: "0.0",
     totalSku: 6,
     medianData: [0, 1, 0, 0, 1, 1, 0, 1, 0, 0, 0, 0, 0, 0]
   },
   {
-    id: 6,
-    name: "Товары для ремонта",
+    id: '36fa0bb7-21b9-c2af-8b07-d2d74538381c',
+    name: "Антисептик для рук",
     discount: "-33.6%",
     weekDynamic: "0.0",
     totalSku: 4,
     medianData: [0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
   },
-  {
-    id: 7,
-    name: "Товары для дома",
-    discount: "-15.0%",
-    weekDynamic: "0.0",
-    totalSku: 1,
-    medianData: [0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
-  }
 ];
 
 // Products within a category
 export const categoryProducts = [
   {
-    id: 1,
-    name: "Туалетное крем-мыло для лица и тела Caring cream bar, DURU, 90г",
+    id: '9ea28897-29a6-3746-cac9-af2e8c0b1593',
+    name: "Прочее для окраски волос",
     producer: "Buyup",
     minPrice: 59.00,
     maxPrice: 59.00,
@@ -123,8 +115,8 @@ export const categoryProducts = [
     priceRange: { min: 58.00, max: 149.00, current: 58.00 }
   },
   {
-    id: 2,
-    name: "Туалетное крем-мыло для лица и тела Caring cream bar, DURU, 90г",
+    id: '1e854879-36ff-7f40-7926-5cca64ddf343',
+    name: "Ополаскиватель для полости рта",
     producer: "Buyup",
     minPrice: 59.00,
     maxPrice: 59.00, 
@@ -133,8 +125,8 @@ export const categoryProducts = [
     priceRange: { min: 127.00, max: 319.00, current: 127.00 }
   },
   {
-    id: 3,
-    name: "Туалетное крем-мыло для лица и тела Caring cream bar, DURU, 90г",
+    id: '49b54d00-aefc-2a5a-f59d-4352a8ab1d1d',
+    name: "Полотенца",
     producer: "Buyup",
     minPrice: 59.00,
     maxPrice: 59.00,
@@ -143,8 +135,8 @@ export const categoryProducts = [
     priceRange: { min: 43.50, max: 87.00, current: 43.50 }
   },
   {
-    id: 4,
-    name: "Туалетное крем-мыло для лица и тела Caring cream bar, DURU, 90г",
+    id: '368c0f8f-06d8-80a5-3eae-3cba5f68b624',
+    name: "Салфетки",
     producer: "Buyup",
     minPrice: 59.00,
     maxPrice: 59.00,
@@ -153,8 +145,8 @@ export const categoryProducts = [
     priceRange: { min: 79.50, max: 99.00, current: 79.50 }
   },
   {
-    id: 5,
-    name: "Туалетное крем-мыло для лица и тела Caring cream bar, DURU, 90г",
+    id: 'ce8f964b-a690-20db-d847-e89cf9ebea36',
+    name: "Салфетки влажные",
     producer: "Buyup",
     minPrice: 59.00,
     maxPrice: 59.00,
@@ -163,8 +155,8 @@ export const categoryProducts = [
     priceRange: { min: 102.50, max: 220.00, current: 102.50 }
   },
   {
-    id: 6,
-    name: "Туалетное крем-мыло для лица и тела Caring cream bar, DURU, 90г",
+    id: '36fa0bb7-21b9-c2af-8b07-d2d74538381c',
+    name: "Антисептик для рук",
     producer: "Buyup",
     minPrice: 59.00,
     maxPrice: 59.00,
